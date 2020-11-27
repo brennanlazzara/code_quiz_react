@@ -1,13 +1,9 @@
-import Header from '../src/components/Header/Header';
-import StartMenu from '../src/components/StartMenu/StartMenu';
-import Footer from '../src/components/Footer/Footer'
+import Home from '../src/components/Pages/Home/Home'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <StartMenu />
-    <Footer />
+    <div className='App'>
+      <Home />
     </div>
   );
 }
