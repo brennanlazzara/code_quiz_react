@@ -4,7 +4,7 @@ import './style.css';
 const Footer = () => {
     return (
         <div>
-            <p>who cares this just the footer</p>
+            <p>who cares this is just the footer</p>
         </div>
     )
 }
