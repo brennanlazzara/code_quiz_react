@@ -12,3 +12,11 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+.button {
+    border-radius: 15px;
+}
+
+.button h3 {
+    color: red;
+}

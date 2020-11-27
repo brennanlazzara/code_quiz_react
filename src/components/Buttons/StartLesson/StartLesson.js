@@ -5,7 +5,7 @@ const StartLesson = () => {
   return (
     <div className='container'>
       <div className='center'>
-        <button>
+        <button className='button'>
           <a href='/Lesson'>
             {' '}
             <h3> Start The Lesson</h3>
