@@ -1,9 +1,13 @@
+import Header from '../src/components/Header/Header';
+import StartMenu from '../src/components/StartMenu/StartMenu';
+import Footer from '../src/components/Footer/Footer'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-    <h1>Hello Fuckers</h1>
-      </header>
+      <Header />
+      <StartMenu />
+    <Footer />
     </div>
   );
 }
