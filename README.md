@@ -20,11 +20,28 @@ MONGODB
 ## License
 No License required. These are public pages. 
 
-## Dependencies
+## Client Dependencies
+````
+    "bootstrap": "^4.5.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "reactstrap": "^8.7.1",
+    "web-vitals": "^0.2.4"
+````
+
+## Server Dependencies
 
 ## Available Scripts
 
 In the project directory, you can run:
+````
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+````
 
 ### `npm run start`
 
