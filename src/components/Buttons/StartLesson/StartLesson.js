@@ -1,14 +1,17 @@
 import React from 'react';
+import './style.css';
 
 const StartLesson = () => {
   return (
-    <div>
-      <button>
-        <a href='/Lesson'>
-          {' '}
-          <h3> Start The Lesson</h3>
-        </a>
-      </button>
+    <div className='container'>
+      <div className='center'>
+        <button>
+          <a href='/Lesson'>
+            {' '}
+            <h3> Start The Lesson</h3>
+          </a>
+        </button>
+      </div>
     </div>
   );
 };
