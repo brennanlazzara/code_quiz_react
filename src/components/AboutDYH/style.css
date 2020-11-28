@@ -1,0 +1,20 @@
+.my-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 15px auto 100px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: thick groove #999999;
+}
+
+p {
+    text-align: center;
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    text-shadow: 2px 2px black;
+    color: red;
+    margin-top: 1rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
