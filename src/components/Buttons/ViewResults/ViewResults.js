@@ -2,13 +2,15 @@ import React from 'react';
 
 const ViewResults = () => {
   return (
-    <div>
-      <button>
-        <a href='/Results'>
-          {' '}
-          <h3> View The Results</h3>
-        </a>
-      </button>
+    <div className='container'>
+      <div className='center'>
+        <button className='button'>
+          <a href='/Results'>
+            {' '}
+            <h3> View Your Results</h3>
+          </a>
+        </button>
+      </div>
     </div>
   );
 };

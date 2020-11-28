@@ -3,13 +3,15 @@ import './style.css';
 
 const StartMenu = () => {
   return (
-    <div>
-      <button>
-        <a href='/Quiz'>
-          {' '}
-          <h3> Start The Quiz</h3>
-        </a>
-      </button>
+    <div className='container'>
+      <div className='center'>
+        <button className='button'>
+          <a href='/Quiz'>
+            {' '}
+            <h3> Start Quiz</h3>
+          </a>
+        </button>
+      </div>
     </div>
   );
 };

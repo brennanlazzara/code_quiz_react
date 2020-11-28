@@ -1,0 +1,25 @@
+.container {
+    height: 100px;
+    position: relative;
+}
+
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    border-radius: 15px;
+    background-color: #333333;
+    border: ridge;
+}
+
+.button h3 {
+    color: red;
+    padding: 5px;
+}

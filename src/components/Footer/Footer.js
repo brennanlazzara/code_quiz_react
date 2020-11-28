@@ -11,14 +11,14 @@ const Footer = () => {
           <div className='row' style={{ height: 64 }}>
             <div
               className='col-sm-6 col-md-3 item'
-              style={{ height: 64, minHeight: 4 }}
+              style={{ height: 64, minHeight: 4, margin: 'auto' }}
             >
               <img
                 src='assets/img/dyhIcon.png'
                 alt={'footer'}
                 width='128px'
                 height='128px'
-                style={{ width: 200, height: 200 }}
+                style={{ width: 125, height: 125 }}
               />
             </div>
             <div
