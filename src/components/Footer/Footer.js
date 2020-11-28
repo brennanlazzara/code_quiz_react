@@ -23,13 +23,21 @@ const Footer = () => {
             </div>
             <div
               className='col item social'
-              style={{ height: 64, marginTop: 150 }}
+              style={{
+                height: 64,
+                marginTop: 150,
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
             >
               <a href='https://github.com/BrennanPredmore'>
-                <FontAwesomeIcon icon={faGithubAlt} />
+                <FontAwesomeIcon
+                  style={{ color: 'red', background: '333' }}
+                  icon={faGithubAlt}
+                />
               </a>
               <a href='https://www.linkedin.com/in/brennan-predmore-132306195/'>
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon style={{ color: 'red' }} icon={faLinkedin} />
               </a>
             </div>
 
