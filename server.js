@@ -9,7 +9,8 @@ app.use(express.static('./public'));
 
 
 
-require('./routes/apiRoutes')(app);
+app.use('/api', require('./routes/apiRoutes'));
+// require('/api', './routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 
