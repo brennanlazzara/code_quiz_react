@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://brennan:1313@codequizreactcluster.pf37c.mongodb.net/code_quiz_react_questions?retryWrites=true&w=majority"
+}
