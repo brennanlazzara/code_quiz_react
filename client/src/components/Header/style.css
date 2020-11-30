@@ -1,7 +1,7 @@
 .display-3 {
     margin: 0 auto;
     text-align: center;
-    color: #ffffff;
+    color: #f2f2f2;
     font-weight: bolder !important;
     text-shadow: 2px 2px black;
     font-family: 'Open Sans', sans-serif !important;
@@ -10,10 +10,10 @@
 
 .lead {
     text-align: center;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: bolder !important;
     text-shadow: 2px 2px black;
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 .jumbotron-fluid {
