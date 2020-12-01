@@ -10,6 +10,18 @@ const QuestionsSchema = mongoose.Schema({
       type: String,
       required: true,
     },
+    {
+      type: String,
+      required: true,
+    },
+    {
+      type: String,
+      required: true,
+    },
+    {
+      type: String,
+      required: true,
+    },
   ],
   answer: {
     type: String,
@@ -17,4 +29,8 @@ const QuestionsSchema = mongoose.Schema({
   },
 });
 
-module.exports = questions = mongoose.model('questions', QuestionsSchema);
+mongoose.pluralize(null);
+
+const questions = mongoose.model('question', QuestionsSchema);
+
+module.exports = questions;

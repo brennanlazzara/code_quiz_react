@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
   });
 });
 
+router.post('/questions', controller.createQuestion);
 router.get('/questions', controller.getAllQuestions);
 
 module.exports = router;
