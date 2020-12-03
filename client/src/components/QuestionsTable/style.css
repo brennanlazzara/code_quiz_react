@@ -1,0 +1,15 @@
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #f2f2f2;
+    font-weight: bolder !important;
+    text-shadow: 2px 2px black;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 25px !important;
+}
+
+button {
+    border-radius: 15px;
+    background-color: #333333;
+    border: ridge;
+}
