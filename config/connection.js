@@ -1,19 +1,39 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+const dotenv = require('dotenv');
 
-const connectDB = async () => {
+dotenv.config();
+const connect = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(process.env.MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
     });
-    console.log('MongoDB Connected...');
-  } catch (error) {
-    console.error(error.message);
-    process.exit(1);
+  } catch (err) {
+    console.log(err);
+    throw new Error(err);
   }
 };
-module.exports = connectDB;
+const disconnect = async () => {
+  try {
+    await mongoose.disconnect();
+  } catch (err) {
+    console.log(err);
+    throw new Error(err);
+  }
+};
+const dropCollection = async (collectionName) => {
+  try {
+    await mongoose.connection.collection(collectionName).drop();
+  } catch (err) {
+    if (err.code === 26) {
+      console.log('namespace %s not found', collectionName);
+    } else {
+      throw new Error(err);
+    }
+  }
+};
+module.exports = {
+  connect,
+  disconnect,
+  dropCollection,
+};
