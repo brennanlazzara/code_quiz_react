@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const db = require('./config/connection');
+const db = require('./mongoDB/connection');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
