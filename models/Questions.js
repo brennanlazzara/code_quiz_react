@@ -31,6 +31,6 @@ const QuestionsSchema = mongoose.Schema({
 
 mongoose.pluralize(null);
 
-const questions = mongoose.model('question', QuestionsSchema);
+const questions = mongoose.model('questions', QuestionsSchema);
 
 module.exports = questions;
