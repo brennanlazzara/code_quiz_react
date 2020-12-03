@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
-import ViewResults from '../../Buttons/ViewResults/ViewResults';
+import Questions from '../../Questions/Questions'
 
 const Quiz = () => {
   return (
     <div>
       <Header />
-      <ViewResults />
+      <Questions />
       <Footer />
     </div>
   );
