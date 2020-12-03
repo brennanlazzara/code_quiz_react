@@ -1,46 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style.css';
 
-class QuestionsTable extends Component {
-  componentDidMount() {
-    this.getQuestions();
-  }
+const QuestionsTable = () => {
+  const [questions, setQuestions] = useState([]);
 
-  getQuestions() {
-    axios.get('/api/questions').then((res) => {
-      this.setState({
-        questionData: {
-          title: res.data[0].title,
-          choices: [
-            res.data[0].choices[0],
-            res.data[0].choices[1],
-            res.data[0].choices[2],
-            res.data[0].choices[3],
-          ],
-        },
-      });
-    });
-  }
-  constructor() {
-    super();
+  useEffect(() => {
+    getQuestions();
+  }, []);
 
-    this.state = {
-      questionData: {},
-    };
-  }
+  const getQuestions = async () => {
+    let res = await axios.get('/api/questions');
+    setQuestions(res.data);
+  };
 
-  render() {
-    return (
-      <div>
-        <h1>{this.state.questionData.title}</h1>
-        <button>{console.log(this.state.questionData.choices)}</button>
-        {/* <button>{this.state.questionData.choices[1]}</button>
-        <button>{this.state.questionData.choices[2]}</button>
-        <button>{this.state.questionData.choices[3]}</button> */}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      {questions.map((res) => {
+        return (
+          <div>
+            <h1>{res.title}</h1>
+            <button>{res.choices[0]}</button>
+            <button>{res.choices[1]}</button>
+            <button>{res.choices[2]}</button>
+            <button>{res.choices[3]}</button>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default QuestionsTable;
