@@ -5,24 +5,7 @@ const QuestionsSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  choices: [
-    {
-      type: String,
-      required: true,
-    },
-    {
-      type: String,
-      required: true,
-    },
-    {
-      type: String,
-      required: true,
-    },
-    {
-      type: String,
-      required: true,
-    },
-  ],
+  choices: [String],
   answer: {
     type: String,
     required: true,
@@ -31,6 +14,6 @@ const QuestionsSchema = mongoose.Schema({
 
 mongoose.pluralize(null);
 
-const questions = mongoose.model('questions', QuestionsSchema);
+const questionsModel = mongoose.model('questions', QuestionsSchema);
 
-module.exports = questions;
+module.exports = questionsModel;
