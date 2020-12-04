@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Question1 from '../Pages/Quiz/Question1/Question1';
-import Question2 from '../Pages/Quiz/Question1/Question2';
-import Question3 from '../Pages/Quiz/Question1/Question3';
-import Question4 from '../Pages/Quiz/Question1/Question4';
-import Question5 from '../Pages/Quiz/Question1/Question5';
+// import Question2 from '../Pages/Quiz/Question1/Question2';
+// import Question3 from '../Pages/Quiz/Question1/Question3';
+// import Question4 from '../Pages/Quiz/Question1/Question4';
+// import Question5 from '../Pages/Quiz/Question1/Question5';
 import './style.css';
 
 
@@ -21,31 +21,24 @@ const QuestionsTable = () => {
   };
 
   return (
-    <div>
-      {questions.map((res) => {
-        return (
-          <div className={'questionDIV'}>
-            <h1 className={'title'}>{res.title}</h1>
-            <div className='topQuestions'>
-              <button  className={'button'}>
-                <h5>{res.choices[0]}</h5>
-              </button>
-              <button  className={'button'}>
-                <h5>{res.choices[1]}</h5>
-              </button>
-            </div>
-            <div className='bottomQuestions'>
-              <button  className={'button'}>
-                <h5>{res.choices[2]}</h5>
-              </button>
-              <button  className={'button'}>
-                <h5>{res.choices[3]}</h5>
-              </button>
-            </div>
-          </div>
-        );
-      })}
+  {  if(questions.length = 0 ) {
+     return( <div>
+      <h1>loading</h1>
+      </div>)
+    }
+    ifElse {
+      return(
+            <div className="questionDIV">
+      <Question1 question1={questions} />
+      {/* <Question2 question2={questions} />
+      <Question3 question3={questions} />
+      <Question4 question4={questions} />
+      <Question5 question5={questions} /> */}
     </div>
+      )
+    }}
+    
+
   );
 };
 
