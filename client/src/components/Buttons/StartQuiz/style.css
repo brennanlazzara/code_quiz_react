@@ -13,12 +13,12 @@
 }
 
 .button {
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     background-color: #333333;
     border: ridge;
 }
 
 .button h3 {
     color: red;
-    padding: 5px;
+    padding: 0.3125rem;
 }

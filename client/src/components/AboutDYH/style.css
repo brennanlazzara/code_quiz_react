@@ -1,20 +1,20 @@
 .my-container {
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    margin: 15px auto 100px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: 0.9375rem auto 6.25rem;
+    padding-bottom: 0.625rem;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
     border: thick groove #999999;
 }
 
 p {
     text-align: center;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     font-weight: bolder !important;
-    text-shadow: 2px 2px black;
+    text-shadow: 0.0625rem 0.0625rem black;
     color: #f2f2f2;
-    margin-top: 1rem !important;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-top: 0.0625rem !important;
+    margin-left: 0.0625rem;
+    margin-right: 0.0625rem;
 }
