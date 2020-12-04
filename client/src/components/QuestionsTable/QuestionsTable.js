@@ -18,12 +18,24 @@ const QuestionsTable = () => {
     <div>
       {questions.map((res) => {
         return (
-          <div>
-            <h1>{res.title}</h1>
-            <button>{res.choices[0]}</button>
-            <button>{res.choices[1]}</button>
-            <button>{res.choices[2]}</button>
-            <button>{res.choices[3]}</button>
+          <div className={'questionDIV'}>
+            <h1 className={'title'}>{res.title}</h1>
+            <div className='topQuestions'>
+              <button  className={'button'}>
+                <h5>{res.choices[0]}</h5>
+              </button>
+              <button  className={'button'}>
+                <h5>{res.choices[1]}</h5>
+              </button>
+            </div>
+            <div className='bottomQuestions'>
+              <button  className={'button'}>
+                <h5>{res.choices[2]}</h5>
+              </button>
+              <button  className={'button'}>
+                <h5>{res.choices[3]}</h5>
+              </button>
+            </div>
           </div>
         );
       })}
