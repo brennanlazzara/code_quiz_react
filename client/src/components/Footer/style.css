@@ -8,25 +8,25 @@ footer {
     bottom: 0;
     width: 100%;
     /*line-height: 60px;*/
-    padding: 50px;
+    padding: 3.125rem;
     color: #f0f9ff;
     background-color: transparent;
 }
 
 .footer-dark h3 {
     margin-top: 11rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     color: #f2f2f2;
-    text-shadow: 2px 2px black;
+    text-shadow: 0.125rem 0.125rem black;
 }
 
 .footer-dark ul {
     padding: 0;
     list-style: none;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 0;
 }
 
@@ -43,12 +43,12 @@ footer {
 @media(max-width:767px) {
     .footer-dark .item:not(.social) {
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
     }
 }
 
 .footer-dark .item.text {
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
 }
 
 @media(max-width:767px) {
@@ -69,20 +69,20 @@ footer {
 @media(max-width:991px) {
     .footer-dark .item.social {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
 }
 
 .footer-dark .item.social > a {
-    font-size: 20px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-    margin: 0 8px;
+    margin: 0 0.5rem;
     color: #fff;
     opacity: 0.75;
 }
@@ -93,9 +93,9 @@ footer {
 
 .footer-dark .copyright {
     text-align: center;
-    padding-top: 24px;
+    padding-top: 1.5rem;
     opacity: 0.3;
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin-bottom: 0;
 }
 
