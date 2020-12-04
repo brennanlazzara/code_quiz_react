@@ -1,14 +1,14 @@
 import React from 'react';
 import './style.css';
 
-const StartLesson = () => {
+const ViewResultsBTN = () => {
   return (
     <div className='container'>
       <div className='center'>
         <button className='button'>
-          <a href='/Lesson'>
+          <a href='/Results'>
             {' '}
-            <h3> Start The Lesson</h3>
+            <h3> View Your Results</h3>
           </a>
         </button>
       </div>
@@ -16,4 +16,4 @@ const StartLesson = () => {
   );
 };
 
-export default StartLesson;
+export default ViewResultsBTN;

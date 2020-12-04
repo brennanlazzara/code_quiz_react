@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
-import StartQuiz from '../../Buttons/StartQuiz/StartQuiz';
+import StartQuizBTN from '../../Buttons/StartQuiz/StartQuizBTN';
 import AboutDYH from '../../AboutDYH/AboutDYH';
 
 
@@ -10,7 +10,7 @@ const Lesson = () => {
     <div>
       <Header />
       <AboutDYH />
-      <StartQuiz />
+      <StartQuizBTN />
       <Footer />
     </div>
   );
