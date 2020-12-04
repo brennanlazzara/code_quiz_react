@@ -2,14 +2,14 @@ import React from 'react';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 import Questions from '../../Questions/Questions';
-// import ViewResults from '../../Buttons/ViewResults';
+import ViewResultsBTN from '../../Buttons/ViewResults/ViewResultsBTN';
 
 const Quiz = () => {
   return (
     <div>
       <Header />
       <Questions />
-      {/* <ViewResults /> */}
+      <ViewResultsBTN />
       <Footer />
     </div>
   );

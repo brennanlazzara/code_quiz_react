@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../../Header/Header';
-import StartLesson from '../../Buttons/StartLesson/StartLesson';
+import StartLessonBTN from '../../Buttons/StartLesson/StartLessonBTN';
 import Footer from '../../Footer/Footer';
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <StartLesson />
+      <StartLessonBTN />
       <Footer />
     </div>
   );
