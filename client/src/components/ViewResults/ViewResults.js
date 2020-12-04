@@ -6,7 +6,7 @@ const ViewResults = () => {
     <div>
       <div className='viewResultsDIV'>
         <h1 className={'header'}>View Results</h1>
-        <h3 className={'score'}>You scored:</h3>
+        <h3 className={'youScored'}>You scored:</h3>
       </div>
     </div>
   );
