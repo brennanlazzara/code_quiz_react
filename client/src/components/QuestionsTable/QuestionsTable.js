@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Question1 from '../Pages/Quiz/Question1/Question1';
+import Question2 from '../Pages/Quiz/Question1/Question2';
+import Question3 from '../Pages/Quiz/Question1/Question3';
+import Question4 from '../Pages/Quiz/Question1/Question4';
+import Question5 from '../Pages/Quiz/Question1/Question5';
 import './style.css';
+
 
 const QuestionsTable = () => {
   const [questions, setQuestions] = useState([]);
