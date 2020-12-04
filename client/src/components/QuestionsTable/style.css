@@ -1,15 +1,48 @@
-h1 {
-    margin: 0 auto;
-    text-align: center;
-    color: #f2f2f2;
-    font-weight: bolder !important;
-    text-shadow: 2px 2px black;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 25px !important;
+.title {
+  margin: 0 auto;
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: bolder !important;
+  text-shadow: 0.125rem 0.125rem black;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 1.5625rem !important;
 }
 
-button {
-    border-radius: 15px;
-    background-color: #333333;
-    border: ridge;
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-radius: 1.5625rem;
+  background-color: #333333;
+  margin-top: 0.625rem;   
+  width: 13rem;
+}
+
+.button:hover {
+    opacity: 0.75;
+}
+
+button h5 {
+  color: red;
+  padding: 2.5px;
+  margin: auto;
+}
+
+.questionDIV {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 0.625rem;
+}
+
+.topQuestions {
+    display: flex;
+    margin-right: 12.5rem;
+    margin-left: 12.5rem;
+}
+
+.bottomQuestions {
+    display: flex;
+    margin-right: 12.5rem;
+    margin-left: 12.5rem;
 }
