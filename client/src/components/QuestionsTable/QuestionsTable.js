@@ -13,6 +13,7 @@ class QuestionsTable extends Component {
     this.getQuestions();
   }
 
+  //big shawn rippin
   getQuestions() {
     axios.get('/api/questions').then((res) => this.setState(res.data));
   }
