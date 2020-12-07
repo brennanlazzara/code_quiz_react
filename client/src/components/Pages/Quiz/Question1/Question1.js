@@ -4,8 +4,8 @@ const Question1 = ({ question }) => {
   const [btnDisabled, setbtnDisabled] = useState(false);
 
   const answerBtnClicked = (e) => {
+    setbtnDisabled(true)
     let resultsScore;
-  setbtnDisabled(true)
     e.target.innerText === question[0].answer
       ? (resultsScore = 20)
       : (resultsScore = 0);
