@@ -2,8 +2,12 @@ import React from 'react';
 
 const Question4 = ({ question }) => {
   const answerBtnClicked = (e) => {
-    console.log(e.target.innerText)
-  }
+    let resultsScore;
+    e.target.innerText === question[3].answer
+      ? (resultsScore = 20)
+      : (resultsScore = 0);
+    console.log(resultsScore);
+  };
   return (
     <div className={'questionDIV'}>
       <h1 className={'title'}>{question[3].title}</h1>
