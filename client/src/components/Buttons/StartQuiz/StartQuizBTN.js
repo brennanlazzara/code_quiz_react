@@ -5,8 +5,7 @@ const StartMenu = () => {
   const removeLocalStorage = () => {
     localStorage.removeItem('results');
     localStorage.removeItem('name');
-
-  }
+  };
   return (
     <div className='container'>
       <div className='center'>
