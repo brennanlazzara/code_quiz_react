@@ -5,11 +5,12 @@ const Question1 = ({ question }) => {
 
   const answerBtnClicked = (e) => {
     setbtnDisabled(true)
-    let resultsScore;
+    localStorage.removeItem('results');
+    let resultsScore = 0;
     e.target.innerText === question[0].answer
       ? (resultsScore = 20)
       : (resultsScore = 0);
-    console.log(resultsScore);
+    localStorage.setItem('results', JSON.stringify(resultsScore));
   };
   return (
     <div className={'questionDIV'}>
