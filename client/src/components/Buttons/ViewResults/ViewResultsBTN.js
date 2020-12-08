@@ -3,7 +3,8 @@ import './style.css';
 
 const ViewResultsBTN = () => {
 const viewResults = () => {
-  alert('HELLO')
+ let name = prompt('What is your name?')
+ localStorage.setItem('name', JSON.stringify(name));
 }
   return (
     <div className='container'>
