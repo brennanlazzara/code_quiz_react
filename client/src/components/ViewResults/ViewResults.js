@@ -1,6 +1,6 @@
 import React from 'react';
-import RetryQuizBTN from '../Buttons/RetryQuizBTN/RetryQuizBTN.js';
-import GoHomeBTN from '../Buttons/GoHomeBTN/GoHomeBTN.js';
+import RetryQuizBTN from '../Buttons/RetryQuiz/RetryQuizBTN';
+import GoHomeBTN from '../Buttons/GoHome/GoHomeBTN';
 import './style.css';
 
 const ViewResults = () => {

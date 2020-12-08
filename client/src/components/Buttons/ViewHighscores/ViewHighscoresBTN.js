@@ -6,7 +6,7 @@ const ViewHighscoresBTN = () => {
     <div className='container'>
       <div className='center'>
         <button className='button'>
-          <a href='/Lesson'>
+          <a href='/ViewHighscores'>
             {' '}
             <h3> High Scores</h3>
           </a>
