@@ -9,9 +9,9 @@ const Question5 = ({ question }) => {
     e.target.innerText === question[4].answer
       ? (resultsScore = 20)
       : (resultsScore = 0);
-      resultsScore += results;
-      localStorage.setItem('results', JSON.stringify(resultsScore));
-    };
+    resultsScore += results;
+    localStorage.setItem('results', JSON.stringify(resultsScore));
+  };
   return (
     <div className={'questionDIV'}>
       <h1 className={'title'}>{question[4].title}</h1>
