@@ -2,10 +2,15 @@ import React from 'react';
 import './style.css';
 
 const StartMenu = () => {
+  const removeLocalStorage = () => {
+    localStorage.removeItem('results');
+    localStorage.removeItem('name');
+
+  }
   return (
     <div className='container'>
       <div className='center'>
-        <button className='button'>
+        <button onClick={removeLocalStorage} className='button'>
           <a href='/Quiz'>
             {' '}
             <h3> Start Quiz</h3>

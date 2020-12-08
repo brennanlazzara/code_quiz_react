@@ -5,8 +5,7 @@ const Question1 = ({ question }) => {
 
   const answerBtnClicked = (e) => {
     setbtnDisabled(true);
-    localStorage.removeItem('results');
-    let resultsScore = 0;
+    let resultsScore;
     e.target.innerText === question[0].answer
       ? (resultsScore = 20)
       : (resultsScore = 0);
