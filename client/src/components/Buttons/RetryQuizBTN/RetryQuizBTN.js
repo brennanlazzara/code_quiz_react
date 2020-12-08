@@ -1,14 +1,14 @@
 import React from 'react';
 import './style.css';
 
-const StartLessonBTN = () => {
+const retryQuizBTN = () => {
   return (
     <div className='container'>
       <div className='center'>
         <button className='button'>
           <a href='/Lesson'>
             {' '}
-            <h3> Start Lesson</h3>
+            <h3> Retry Quiz</h3>
           </a>
         </button>
       </div>
@@ -16,4 +16,4 @@ const StartLessonBTN = () => {
   );
 };
 
-export default StartLessonBTN;
+export default retryQuizBTN;

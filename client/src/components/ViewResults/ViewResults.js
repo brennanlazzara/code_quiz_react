@@ -1,4 +1,5 @@
 import React from 'react';
+import RetryQuizBTN from '../Buttons/RetryQuizBTN/RetryQuizBTN.js'
 import './style.css';
 
 const ViewResults = () => {
@@ -11,6 +12,7 @@ const ViewResults = () => {
           {JSON.parse(localStorage.getItem('results'))}%
         </h3>
       </div>
+      <RetryQuizBTN />
     </div>
   );
 };
