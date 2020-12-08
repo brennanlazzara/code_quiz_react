@@ -1,25 +1,25 @@
 .container {
     height: 6.25rem;
     position: relative;
-}
-
-
-.center {
+  }
+  
+  .center {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.button {
+  }
+  
+  .button {
     border-radius: 0.9375rem;
     background-color: #333333;
     border: ridge;
-}
-
-.button h3 {
+  }
+  
+  .button h3 {
     color: red;
     padding: 0.3125rem;
-}
+  }
+  

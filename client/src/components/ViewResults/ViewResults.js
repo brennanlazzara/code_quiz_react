@@ -1,5 +1,6 @@
 import React from 'react';
-import RetryQuizBTN from '../Buttons/RetryQuizBTN/RetryQuizBTN.js'
+import RetryQuizBTN from '../Buttons/RetryQuizBTN/RetryQuizBTN.js';
+import GoHomeBTN from '../Buttons/GoHomeBTN/GoHomeBTN.js';
 import './style.css';
 
 const ViewResults = () => {
@@ -11,8 +12,9 @@ const ViewResults = () => {
           {JSON.parse(localStorage.getItem('name'))} Scored:{' '}
           {JSON.parse(localStorage.getItem('results'))}%
         </h3>
+        <RetryQuizBTN />
+        <GoHomeBTN />
       </div>
-      <RetryQuizBTN />
     </div>
   );
 };

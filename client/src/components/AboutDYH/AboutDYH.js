@@ -1,4 +1,5 @@
 import React from 'react';
+import StartQuizBTN from '../Buttons/StartQuiz/StartQuizBTN';
 import './style.css';
 
 const AboutDYH = () => {
@@ -22,8 +23,10 @@ const AboutDYH = () => {
           <br />
           In 2020 the band has been on hiatus due to covid and hopes to still
           play shows when venues and live shows come back to fruition.
-        </p>
+        </p>      
+        <StartQuizBTN />
       </div>
+
     </div>
   );
 };
