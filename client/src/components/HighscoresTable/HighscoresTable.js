@@ -13,7 +13,7 @@ class HighscoresTable extends Component {
   getResults() {
     axios.get('/api/results').then((res) => {
       console.log(res.data);
-      this.setState([res.data]);
+      this.setState(res.data);
     });
   }
 
