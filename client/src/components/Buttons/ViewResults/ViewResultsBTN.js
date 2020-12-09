@@ -23,7 +23,7 @@ const ViewResultsBTN = () => {
         <button onClick={viewResults} className='button'>
           <a href='/Results'>
             {' '}
-            <h3> View Your Results</h3>
+            <h3> View Results</h3>
           </a>
         </button>
       </div>

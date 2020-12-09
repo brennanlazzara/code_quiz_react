@@ -3,7 +3,7 @@ import QuestionsTable from '../QuestionsTable/QuestionsTable';
 
 const Questions = () => {
   return (
-    <div>
+    <div style={{ display: 'flex'}}>
       <QuestionsTable />
     </div>
   );
