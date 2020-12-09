@@ -6,14 +6,28 @@ import './styles.css';
 class HighscoresTable extends Component {
   constructor(props) {
     super(props);
+    this.getResults();
+  }
+
+  getResults() {
+    let name = JSON.parse(localStorage.getItem('name'));
+    let result = JSON.parse(localStorage.getItem('results'));
+    this.setState({
+      name: name,
+      result: result,
+    });
   }
 
   render() {
-    return (
-      <div>
-        <h1>Hello</h1>
-      </div>
-    );
+    if (!this.state) {
+      return (
+        <div>
+          <div>{console.log(this.state)}</div>
+        </div>
+      );
+    } else {
+      return <></>;
+    }
   }
 }
 
