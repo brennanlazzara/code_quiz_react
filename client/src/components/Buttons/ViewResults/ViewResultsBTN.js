@@ -1,11 +1,19 @@
 import React from 'react';
+import axios from 'axios';
 import './style.css';
 
 const ViewResultsBTN = () => {
-const viewResults = () => {
- let name = prompt('What is your name?')
- localStorage.setItem('name', JSON.stringify(name));
-}
+  const viewResults = () => {
+    let score = JSON.parse(localStorage.getItem('results'));
+    let name = prompt('What is your name?');
+    localStorage.setItem('name', JSON.stringify(name));
+    let body = {
+      name: name,
+      results: score,
+    };
+    axios.post('/api/results', body);
+  };
+
   return (
     <div className='container'>
       <div className='center'>
