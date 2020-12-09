@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const controller = require('../controller/questions.controller');
+const questionsController = require('../controller/questions.controller');
+const resultsController = require('../controller/results.controller');
 
 router.get('/', (req, res) => {
   res.json({
@@ -10,10 +11,10 @@ router.get('/', (req, res) => {
 });
 
 // Questions
-router.post('/questions', controller.createQuestion);
-router.get('/questions', controller.getAllQuestions);
+router.post('/questions', questionsController.createQuestion);
+router.get('/questions', questionsController.getAllQuestions);
 
 // Results
-router.post('/resutls', controller.createResults);
+router.post('/results', resultsController.createResults);
 
 module.exports = router;

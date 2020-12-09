@@ -3,7 +3,7 @@ import axios from 'axios';
 import './style.css';
 
 const ViewResultsBTN = () => {
-  const viewResults = () => {
+  const viewResults = async () => {
     let score = JSON.parse(localStorage.getItem('results'));
     let name = prompt('What is your name?');
     localStorage.setItem('name', JSON.stringify(name));
@@ -11,7 +11,10 @@ const ViewResultsBTN = () => {
       name: name,
       results: score,
     };
-    axios.post('/api/results', body);
+    const headers = {
+      'content-type': 'application/json',
+    };
+    await axios.post('/api/results', body, { headers });
   };
 
   return (
