@@ -16,5 +16,6 @@ router.get('/questions', questionsController.getAllQuestions);
 
 // Results
 router.post('/results', resultsController.createResults);
+router.get('/results', resultsController.getAllResults);
 
 module.exports = router;
