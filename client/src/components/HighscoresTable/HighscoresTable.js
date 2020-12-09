@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import ResultsTable from './ResultsTable';
-import { Table } from 'reactstrap';
 
 import './styles.css';
 
