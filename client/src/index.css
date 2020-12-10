@@ -10,7 +10,7 @@ body {
     line-height: 1;
 
     /* Location of the image */
-    background-image: url('../src/pexels-anouar-olh-1722206.jpg');
+    background-image: url('../src/swanDive.JPG');
 
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;
@@ -32,6 +32,7 @@ body {
 
 }
 
+/* pexels-anouar-olh-1722206.jpg */
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

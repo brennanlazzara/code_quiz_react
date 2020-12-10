@@ -7,7 +7,7 @@ const Header = (props) => {
     <div>
       <Jumbotron fluid>
         <Container fluid>
-          <h1 className='display-3'>Do Your Homework Code Quiz</h1>
+          <h1 className='display-3'>Do Your Homework Trivia Game</h1>
           <p className='lead'>
             This is the official Do Your Homework quiz fan club quiz for the
             biggest fanatics of the greatest band in Austin Texas history!

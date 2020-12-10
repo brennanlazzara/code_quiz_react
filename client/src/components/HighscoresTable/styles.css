@@ -1,0 +1,38 @@
+h1 {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
+
+.viewResultsDIV {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  width: 50%;
+  padding: 0.625rem;
+  border: thick groove #999999;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem !important;
+  font-weight: bolder !important;
+  text-shadow: 0.125rem 0.125rem black;
+  color: red;
+  margin: 25px 0;
+}
+
+.tableHeader {
+  text-align: center;
+  font-size: 1.75rem !important;
+  font-weight: bolder !important;
+  text-shadow: 0.125rem 0.125rem black;
+  color: red;
+}
+
+.youScored {
+  text-align: center;
+  font-size: 1.25rem !important;
+  font-weight: bolder !important;
+  text-shadow: 0.125rem 0.125rem black;
+  color: #f2f2f2;
+}

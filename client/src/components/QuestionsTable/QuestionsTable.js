@@ -22,6 +22,7 @@ class QuestionsTable extends Component {
     if (this.state) {
       return (
         <div className='questionDIV'>
+          {console.log(this.state)}
           <Question1 question={this.state} />
           <Question2 question={this.state} />
           <Question3 question={this.state} />

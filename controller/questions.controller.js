@@ -2,11 +2,9 @@ const questionsModel = require('../models/questions.model');
 
 exports.createQuestion = async (req, res, next) => {
   try {
-    console.log(req.body);
     const newQuestion = await questionsModel.create(req.body);
     res.status(201).json(newQuestion);
   } catch (err) {
-    console.log(err);
     res.status(500).json(err);
   }
 };
