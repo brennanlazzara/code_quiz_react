@@ -1,12 +1,10 @@
 import React from 'react';
 import Questions from '../../Questions/Questions';
-import ViewResultsBTN from '../../Buttons/ViewResults/ViewResultsBTN';
-
+import './style.css'
 const Quiz = () => {
   return (
-    <div>
+    <div className='quiz'>
       <Questions />
-      <ViewResultsBTN />
     </div>
   );
 };
