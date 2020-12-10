@@ -1,30 +1,32 @@
 import React from 'react';
 import { Table } from 'reactstrap';
+import './styles.css';
+import GoHomeBTN from '../Buttons/GoHome/GoHomeBTN'
 
 const ResultsTable = ({ results }) => {
   return (
-    <div>
-      <h1>Your HighScores</h1>
+    <div className={'viewResultsDIV'}>
+      <h1 className={'header'}>HighScores</h1>
       <div>{console.log(results[0])}</div>
       <Table>
         <thead>
-          <tr>
-            <th></th>
+          <tr className={'tableHeader'}>
             <th>Name</th>
-            <th>Results</th>
+            <th>Score</th>
           </tr>
         </thead>
         <tbody>
           {results[0].map((e) => {
             return (
               <tr key={e._id}>
-                <td>{e.name}</td>
-                <td>{e.results}</td>
+                <td className={'youScored'}>{e.name}</td>
+                <td className={'youScored'}>{e.results}</td>
               </tr>
             );
           })}
         </tbody>
       </Table>
+<GoHomeBTN />
     </div>
   );
 };
