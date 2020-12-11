@@ -1,8 +1,8 @@
 .my-container {
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    margin: 0.9375rem auto 6.25rem;
-    padding-bottom: 0.625rem;
+    margin: 0.9375rem auto 0.125rem;
+    padding-bottom: 0.125rem;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
     border: thick groove #999999;
@@ -17,4 +17,16 @@ p {
     margin-top: 1.25rem !important;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+}
+
+@media(max-width:1024px) {
+    .my-container {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        margin: 0.9375rem auto;
+        padding-bottom: 0.125rem;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        border: thick groove #999999;
+    }
 }

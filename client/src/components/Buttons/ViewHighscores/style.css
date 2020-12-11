@@ -1,25 +1,31 @@
 .container {
-    height: 6.25rem;
-    position: relative;
+  height: 6.25rem;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  border-radius: 0.9375rem;
+  background-color: #333333;
+  border: ridge;
+}
+
+.button h3 {
+  color: red;
+  padding: 0.3125rem;
+}
+
+@media (max-width: 1024px) {
+  .center .startCenter {
+    margin-top: 2rem !important;
+    padding: 0.5rem !important;
   }
-  
-  .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  
-  .button {
-    border-radius: 0.9375rem;
-    background-color: #333333;
-    border: ridge;
-  }
-  
-  .button h3 {
-    color: red;
-    padding: 0.3125rem;
-  }
-  
+}

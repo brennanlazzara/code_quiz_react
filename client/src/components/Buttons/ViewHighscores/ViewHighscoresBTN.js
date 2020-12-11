@@ -3,7 +3,7 @@ import './style.css';
 
 const ViewHighscoresBTN = () => {
   return (
-    <div className='container'>
+    <div className='viewHighscores container'>
       <div className='center'>
         <button className='button'>
           <a href='/ViewHighscores'>

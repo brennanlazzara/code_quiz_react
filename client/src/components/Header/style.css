@@ -1,21 +1,32 @@
 .display-3 {
-    margin: 0 auto;
-    text-align: center;
-    color: #f2f2f2;
-    font-weight: bolder !important;
-    text-shadow: 0.125rem 0.125rem black;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 50px !important;
+  margin: 0 auto;
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: bolder !important;
+  text-shadow: 0.125rem 0.125rem black;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 50px !important;
 }
 
 .lead {
-    text-align: center;
-    font-size: 1rem !important;
-    font-weight: bolder !important;
-    text-shadow: 0.125rem 0.125rem black;
-    color: #f2f2f2;
+  text-align: center;
+  font-size: 1rem !important;
+  font-weight: bolder !important;
+  text-shadow: 0.125rem 0.125rem black;
+  color: #f2f2f2;
+}
+.jumbotron {
+  margin-top: 2rem !important;
+  padding: 0.5rem !important;
 }
 
 .jumbotron-fluid {
-    background-color: transparent !important;
+  background-color: transparent !important;
+}
+
+@media (max-width: 1024px) {
+  .jumbotron {
+    margin-top: 2rem !important;
+    padding: 0.5rem !important;
+  }
 }

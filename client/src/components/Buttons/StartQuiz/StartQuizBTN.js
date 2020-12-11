@@ -8,7 +8,7 @@ const StartLessonBTN = () => {
   };
   return (
     <div className='container'>
-      <div className='center'>
+      <div className='center startCenter'>
         <button onClick={removeLocalStorage} className='button'>
           <a href='/Quiz'>
             {' '}

@@ -24,9 +24,9 @@ const AboutDYH = () => {
           In 2020 the band has been on hiatus due to covid and hopes to still
           play shows when venues and live shows come back to fruition.
         </p>      
-        <StartQuizBTN />
-      </div>
 
+      </div>
+      <StartQuizBTN />
     </div>
   );
 };

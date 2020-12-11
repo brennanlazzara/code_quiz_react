@@ -1,6 +1,7 @@
 .container {
   height: 6.25rem;
   position: relative;
+  z-index: 1000;
 }
 
 .center {
@@ -21,4 +22,10 @@
 .button h3 {
   color: red;
   padding: 0.3125rem;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    display: contents;
+  }
 }
