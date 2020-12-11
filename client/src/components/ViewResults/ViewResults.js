@@ -6,7 +6,7 @@ import './style.css';
 const ViewResults = () => {
   return (
     <div>
-      <div className='viewResultsDIV'>
+      <div className='container-fluid viewResultsDIV'>
         <h1 className={'header'}>View Results:</h1>
         <h3 className={'youScored'}>
           {JSON.parse(localStorage.getItem('name'))} Scored:{' '}
