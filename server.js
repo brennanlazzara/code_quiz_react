@@ -8,6 +8,8 @@ app.use(express.static('./public'));
 
 app.use('/api', require('./routes/api-routes'));
 
+
+
 db.connect();
 
 const port = process.env.PORT || 5000;
