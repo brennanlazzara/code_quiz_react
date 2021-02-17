@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import { Schema, pluralize, model } from 'mongoose';
 
-const resultsSchema = mongoose.Schema({
+const resultsSchema = Schema({
   name: {
     type: String,
     required: true,
@@ -11,8 +11,8 @@ const resultsSchema = mongoose.Schema({
   },
 });
 
-mongoose.pluralize(null);
+pluralize(null);
 
-const resultsModel = mongoose.model('results', resultsSchema);
+const resultsModel = model('results', resultsSchema);
 
-module.exports = resultsModel;
+export default resultsModel;

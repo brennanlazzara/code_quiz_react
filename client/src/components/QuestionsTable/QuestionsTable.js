@@ -12,6 +12,11 @@ class QuestionsTable extends Component {
   constructor(props) {
     super(props);
     this.getQuestions();
+    this.state = {
+      lng: 5,
+      lat: 34,
+      zoom: 2,
+    };
   }
 
   //big shawn rippin
