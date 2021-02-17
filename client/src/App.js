@@ -5,7 +5,7 @@ import Quiz from '../src/components/Pages/Quiz/Quiz';
 import Results from '../src/components/Pages/Results/Results';
 import ViewHighscores from './components/Pages/ViewHighscores/ViewHighscores';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer'
+// import Footer from './components/Footer/Footer'
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route exact path='/Results' component={Results} />
           <Route exact path='/ViewHighscores' component={ViewHighscores} />
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

@@ -1,7 +1,7 @@
 # Do Your Homework Code Quiz
 This is the official Do Your Homework quiz fan club quiz for the biggest fanatics of the greatest band in Austin Texas history!
 
-![Screenshot]()
+![Screenshot](client/public/assets/img/code_quiz_react_ScreenShot.png)
 
 ## Langauges Used
 ````
@@ -16,6 +16,8 @@ MONGODB
 
 ## Link
 [Github Repo](https://github.com/BrennanPredmore/code_quiz_react)
+</br>
+[Link](https://code-quiz-react.herokuapp.com/)
 
 ## License
 No License required. These are public pages. 
